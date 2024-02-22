@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
         <title>Cache Bank Landing Page</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/css/leaflet.css">
-        <link rel="stylesheet" href="./assets/css/tailwind/tailwind.min.css">
-        <link rel="stylesheet" href="./assets/css/theme.css">
-        <link rel="stylesheet" href="./assets/css/loopple/loopple.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+            rel="stylesheet"/>
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+            integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+            crossorigin=""/>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/Loopple/loopple-public-assets@main/motion-tailwind/css/leaflet.css"/>
+        <link rel="stylesheet" href="./assets/css/tailwind/tailwind.min.css" />
+        <link rel="stylesheet" href="./assets/css/theme.css" />
+        <link rel="stylesheet" href="./assets/css/loopple/loopple.css" />
     </head>
 
     <!-- Component 1: Project Setup and Responsive Navigation -->
     <body class="bg-gray-100">  <!-- potentially remove this color if bg is still gray later.-->
         <div class="mx-auto bg-white"> <!-- Change div to section? for aria-->
-
+            <!-- Component 1: Responsive Navigation -->
+          
             <!-- Main container with navigation and header content -->
             <div class="relative flex flex-wrap items-center justify-between w-full bg-white py-7 shrink-0">
             
@@ -60,10 +71,10 @@
                     </button>
                 </div>
 
-                <!--SVG hamburger 'button'-->
-                <button aria-labelledby="mobile-menu-toggle" class="md:hidden p-4" id="mobile-menu-toggle">
+               <!--SVG hamburger 'button'-->
+                <button class="md:hidden p-4" id="mobile-menu-toggle" aria-label="Menu">
                 <!-- hamburger SVG -->
-                    <svg
+                    <svg focusable="false" 
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
@@ -121,44 +132,44 @@
                     <button class="flex items-center px-4 py-2 text-sm font-bold text-purple-blue-600 bg-purple-100 rounded-xl hover:bg-purple-blue-600 hover:text-purple-100 focus:outline-none focus:ring-4 focus:ring-purple-blue-200 transition duration-300">
                         Sign Up
                     </button>   
-                </div> 
+                </div>
             </div>
 
-        <div class="container mx-auto">
-            <!-- Centered container for more content -->
-            <!-- Component 2: Hero and Endorsements-->
-            
-            <!--Hero -->
-            <section class="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
-                <div class="flex flex-col justify-center col-span-1 text-center lg:text-start">
-                    <h1 class="mb-8 text-4xl font-extrabold leading-tight lg:text-6xl text-dark-grey-900">
-                        The Clever Place to Keep Your Cache
-                    </h1>
+            <div class="container mx-auto">
+                <!-- Centered container for more content -->
+                <!-- Component 2: Hero and Endorsements-->
+                
+                <!--Hero -->
+                <section class="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
+                    <div class="flex flex-col justify-center col-span-1 text-center lg:text-start">
+                        <h1 class="mb-8 text-4xl font-extrabold leading-tight lg:text-6xl text-dark-grey-900">
+                            The Clever Place to Keep Your Cache
+                        </h1>
+    
+                        <p class="mb-6 text-base font-normal leading-7 lg:w-3/4 text-grey-900">
+                            Cache bank is designed exlcusively for software developers. We understand your financial needs are as unique as the code your write.
+                            Our services offer cutting-edge financial solutions that help you take care of your cash.
+                        </p>
 
-                    <p class="mb-6 text-base font-normal leading-7 lg:w-3/4 text-grey-900">
-                        Cache bank is designed exlcusively for software developers. We understand your financial needs are as unique as the code your write.
-                        Our services offer cutting-edge financial solutions that help you take care of your cash.
-                    </p>
-
-                    <div class="flex flex-col items-center gap-4 lg:flex-row">
-                        <button class="flex items-center py-4 text-sm font-bold text-white px-7  bg-green-500 focus:outline-none focus:ring-4 focus:ring-purple-blue-200 transition duration-300 rounded-xl hover:bg-pink-500">
-                            Join Cache Now
-                        </button>
-
-                        <button class="flex items-center py-4 text-sm font-bold text-white px-7 focus:outline-none focus:ring-4 focus:ring-purple-blue-200 transition duration-300 rounded-xl bg-green-500 hover:bg-pink-500">
-                            Join Our Discord Server
-                        </button>
+                        <div class="flex flex-col items-center gap-4 lg:flex-row">
+                            <button class="flex items-center py-4 text-sm font-bold text-white px-7  bg-green-500 focus:outline-none focus:ring-4 focus:ring-purple-blue-200 transition duration-300 rounded-xl hover:bg-pink-500">
+                                Join Cache Now
+                            </button>
+    
+                            <button class="flex items-center py-4 text-sm font-bold text-white px-7 focus:outline-none focus:ring-4 focus:ring-purple-blue-200 transition duration-300 rounded-xl bg-green-500 hover:bg-pink-500">
+                                Join Our Discord Server
+                            </button>
+                        </div>
                     </div>
-                </div>
-
-                <div class="items-center justify-end hidden col-span-1 md:flex">
-                    <img class="w-4/5 rounded-md"
-                        src="./assets/component-2/hero-image.png" alt="header image">
-                </div>
-            </section>
-
-            <!-- Endorsements -->
-            <section class="w-full">
+    
+                    <div class="items-center justify-end hidden col-span-1 md:flex">
+                        <img class="w-4/5 rounded-md"
+                            src="./assets/component-2/hero-image.png" alt="header image">
+                    </div>
+                </section>
+                
+             <!-- Endorsements -->
+             <section class="w-full">
                 <!-- Wide full-width container for additional content -->
                 <div class="container flex flew-col items-center gap-8 mx-auto my-40">
                     <p class="text-center text-dark-grey-600 font-semibold mb-10 text-2xl">
@@ -167,8 +178,9 @@
 
                     <div class="flex flex-wrap items-center justify-center w-full gap-6 lg:gap-0 lg:flex-nowrap lg:justify-between">
                         
-                        <!--Amazon Logo SVG 1-->
-                        <svg 
+                        <!--Amazon Logo SVG 1-->  <!--find a way to add voice text for logo--> <!--<title id="svg-amazon">Amazon</title> -->
+                        <svg focusable="false" role="graphics-symbol" 
+                            
                             xmlns="http://www.w3.org/2000/svg"
                             x="0px" y="0px"
                             width="100"
@@ -178,8 +190,10 @@
                                 <path d="M 32.376953 7 C 25.650953 7 18.181375 9.5161875 16.609375 17.742188 C 16.441375 18.618188 17.052859 19.067312 17.630859 19.195312 L 24.460938 19.892578 C 25.102937 19.858578 25.614281 19.260906 25.738281 18.628906 C 26.326281 15.794906 28.727922 14.394531 31.419922 14.394531 C 32.873922 14.394531 34.516953 14.940516 35.376953 16.228516 C 36.370953 17.666516 36.207031 19.617203 36.207031 21.283203 L 36.207031 22.232422 C 32.109031 22.688422 26.763641 22.966766 22.931641 24.634766 C 18.503641 26.528766 15.398437 30.392266 15.398438 36.072266 C 15.398438 43.340266 20.044141 47.003906 25.994141 47.003906 C 31.020141 47.003906 33.733281 45.798719 37.613281 41.886719 C 38.895281 43.724719 39.351219 44.630453 41.699219 46.564453 C 42.227219 46.844453 42.891422 46.789047 43.357422 46.373047 L 43.357422 46.4375 C 44.767422 45.1935 47.34125 42.961766 48.78125 41.759766 C 49.35525 41.291766 49.23125 40.561828 48.78125 39.923828 C 47.48925 38.157828 46.164062 36.694062 46.164062 33.414062 L 46.164062 22.544922 C 46.164062 17.926922 46.475109 13.654609 43.037109 10.474609 C 40.323109 7.8986094 35.812953 7 32.376953 7 z M 35.248047 27.835938 C 35.566797 27.841188 35.885078 27.851562 36.205078 27.851562 L 36.205078 29.367188 C 36.207078 32.095187 36.317687 34.337719 34.929688 36.761719 C 33.805687 38.729719 31.997672 39.919922 30.013672 39.919922 C 27.301672 39.919922 25.734375 37.891281 25.734375 34.863281 C 25.734375 29.653281 29.831016 28.141562 34.291016 27.851562 C 34.610016 27.830562 34.929297 27.830687 35.248047 27.835938 z M 54.171875 45.441406 C 52.353875 45.467406 50.22375 45.850422 48.59375 46.982422 C 48.09375 47.330422 48.166656 47.817953 48.722656 47.751953 C 50.556656 47.533953 54.609844 47.021359 55.339844 47.943359 C 56.067844 48.867359 54.533609 52.665281 53.849609 54.363281 C 53.641609 54.875281 54.092547 55.073594 54.560547 54.683594 C 57.612547 52.155594 58.428687 46.912531 57.804688 46.144531 C 57.494687 45.770531 55.991875 45.415406 54.171875 45.441406 z M 6.3671875 46.404297 C 5.9871875 46.454297 5.8363281 46.946688 6.2363281 47.304688 C 13.020328 53.368688 21.967828 57 31.923828 57 C 39.025828 57 47.315859 54.800578 53.005859 50.642578 C 53.945859 49.952578 53.124109 48.888922 52.162109 49.294922 C 45.784109 51.974922 38.815766 53.273437 32.509766 53.273438 C 23.159766 53.273438 14.140266 50.74725 6.8222656 46.53125 C 6.6602656 46.43925 6.4911875 46.388297 6.3671875 46.404297 z"/>
                         </svg>
 
-                        <!--Minecraft Logo SVG 2-->
-                        <svg
+                       
+                        <!--Minecraft Logo SVG 2--> <!--title id="svg-minecraft">Minecraft</title>-->
+                        <svg focusable="false" role="graphics-symbol" aria-labelledby="svg-minecraft" 
+                            
                             xmlns="http://www.w3.org/2000/svg"
                             x="0px"
                             y="0px"
@@ -189,9 +203,10 @@
                             style="fill: #1b2559">
                                 <path d="M53.5,10h-13l-2,5.5h-3L34,19l-6.5-9H14L3,45l12,11h13l2-8l1,1.5h4l5.5,6.5h13L60,23L53.5,10z M39,19h1h1.5h2l-1.14,3.04	l-4.569,0.286L39,19z M16.979,14h6.87l-0.635,2.223l-7.198,0.576L16.979,14z M17.5,43H7l3.518-10.224L13,32.5L10,41h8.192L17.5,43z M19.045,38.538L13.5,39l1-3h5.423L19.045,38.538z M43.97,43H33l3.874-13H33.47L31,36.5h-8l2.28-6.5H22l-1.217,3.517l-5.598,0.431	L16.5,30h-5.027l3.785-11h7.162l-0.571,2H25l-1,3.5h10h3h11.455L43.97,43z M49.154,21.615l-3.827,0.239L47,16h-4.354l0.764-2H51	L49.154,21.615z"/>
                         </svg>
-
-                        <!--Nike Logo SVG 3-->
-                        <svg
+                            
+                        <!--Nike Logo SVG 3--> <!--<title id="svg-nike">Nike</title>-->
+                        <svg focusable="false" role="graphics-symbol" aria-labelledby="svg-nike"
+                            
                             xmlns="http://www.w3.org/2000/svg"
                             width="155"
                             height="65"
@@ -200,8 +215,9 @@
                                 <path d="M20.2765 64.8827C14.7995 64.6671 10.3185 63.1822 6.81467 60.4243C6.14599 59.8975 4.55259 58.3178 4.01802 57.6515C2.59718 55.8814 1.6312 54.1586 0.986896 52.2472C-0.995712 46.3634 0.0246651 38.6425 3.90547 30.1689C7.22826 22.9145 12.3555 15.7196 21.3007 5.75465C22.6183 4.28833 26.5423 0 26.5676 0C26.577 0 26.3631 0.367039 26.094 0.813998C23.7681 4.67396 21.778 9.22062 20.6939 13.1568C18.9523 19.4727 19.1624 24.8928 21.3091 29.0957C22.79 31.9911 25.3287 34.4991 28.1835 35.8855C33.1813 38.3117 40.4984 38.5124 49.4342 36.4728C50.0494 36.3315 80.535 28.3133 117.18 18.6541C153.826 8.99389 183.814 1.09648 183.818 1.10298C183.828 1.11136 98.6805 37.2115 54.4788 55.9399C47.4788 58.905 45.6068 59.654 42.3159 60.7988C33.9034 63.7258 26.3678 65.1224 20.2765 64.8827Z" fill="#1B2559"/>
                         </svg>
 
-                        <!--Notion Logo SVG 4-->
-                        <svg
+                        <!--Notion Logo SVG 4--> <!-- <title id="svg-notion">Notion</title>-->
+                        <svg focusable="false" role="graphics-symbol" aria-labelledby="svg-notion"
+                           
                             xmlns="http://www.w3.org/2000/svg"
                             x="0px"
                             y="0px"
@@ -214,8 +230,9 @@
                                 </path>
                         </svg>
 
-                        <!--Steam Logo SVG 5-->
-                        <svg
+                        <!--Steam Logo SVG 5--> <!--<title id="svg-title">Steam</title>-->
+                        <svg focusable="false" role="graphics-symbol" aria-labelledby="svg-steam"
+
                             xmlns="http://www.w3.org/2000/svg"
                             x="0px"
                             y="0px"
@@ -231,8 +248,15 @@
                     </div>
                 </div>
             </section>
-                
-            
+
+            <!--Component 3: Features -->
+            <div class="w-full">
+                <!-- Wide full-width container for additional content -->
+            </div>
+
+            <div class="container mx-auto">
+                <!-- Centered container for more content -->
+            </div>
             <div class="w-full">
                 <!-- Wide full-width container for additional content -->
             </div>
@@ -240,6 +264,7 @@
                 <!-- Wide full-width container for additional content -->
             </div>
         </div>
+
         <div class="w-full bg-green-500">
             <!-- Full-width footer container with green background -->
         </div>
