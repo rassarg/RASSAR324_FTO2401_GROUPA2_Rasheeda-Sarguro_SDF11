@@ -27,8 +27,8 @@
     <!-- Component 1: Project Setup and Responsive Navigation -->
     <body class="bg-gray-100">  <!-- potentially remove this color if bg is still gray later.-->
         <div class="mx-auto bg-white"> <!-- Change div to section? for aria-->
+            
             <!-- Component 1: Responsive Navigation -->
-          
             <!-- Main container with navigation and header content -->
             <div class="relative flex flex-wrap items-center justify-between w-full bg-white py-7 shrink-0">
             
@@ -134,42 +134,44 @@
                     </button>   
                 </div>
             </div>
+            <!--End of Component 1-->
+            <!-- </div> ?-->
 
-            <div class="container mx-auto">
-                <!-- Centered container for more content -->
-                <!-- Component 2: Hero and Endorsements-->
+            
+            <!-- Centered container for more content -->
+            <!-- Component 2: Hero and Endorsements-->
                 
-                <!--Hero -->
-                <section class="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
-                    <div class="flex flex-col justify-center col-span-1 text-center lg:text-start">
-                        <h1 class="mb-8 text-4xl font-extrabold leading-tight lg:text-6xl text-dark-grey-900">
+            <!--Hero -->
+            <section class="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
+                <div class="flex flex-col justify-center col-span-1 text-center lg:text-start">
+                    <h1 class="mb-8 text-4xl font-extrabold leading-tight lg:text-6xl text-dark-grey-900">
                             The Clever Place to Keep Your Cache
-                        </h1>
+                    </h1>
     
-                        <p class="mb-6 text-base font-normal leading-7 lg:w-3/4 text-grey-900">
+                    <p class="mb-6 text-base font-normal leading-7 lg:w-3/4 text-grey-900">
                             Cache bank is designed exlcusively for software developers. We understand your financial needs are as unique as the code your write.
                             Our services offer cutting-edge financial solutions that help you take care of your cash.
-                        </p>
+                    </p>
 
-                        <div class="flex flex-col items-center gap-4 lg:flex-row">
-                            <button class="flex items-center py-4 text-sm font-bold text-white px-7  bg-green-500 focus:outline-none focus:ring-4 focus:ring-purple-blue-200 transition duration-300 rounded-xl hover:bg-pink-500">
+                    <div class="flex flex-col items-center gap-4 lg:flex-row">
+                        <button class="flex items-center py-4 text-sm font-bold text-white px-7  bg-green-500 focus:outline-none focus:ring-4 focus:ring-purple-blue-200 transition duration-300 rounded-xl hover:bg-pink-500">
                                 Join Cache Now
-                            </button>
+                        </button>
     
-                            <button class="flex items-center py-4 text-sm font-bold text-white px-7 focus:outline-none focus:ring-4 focus:ring-purple-blue-200 transition duration-300 rounded-xl bg-green-500 hover:bg-pink-500">
+                        <button class="flex items-center py-4 text-sm font-bold text-white px-7 focus:outline-none focus:ring-4 focus:ring-purple-blue-200 transition duration-300 rounded-xl bg-green-500 hover:bg-pink-500">
                                 Join Our Discord Server
-                            </button>
-                        </div>
+                        </button>
                     </div>
+                </div>
     
-                    <div class="items-center justify-end hidden col-span-1 md:flex">
-                        <img class="w-4/5 rounded-md"
-                            src="./assets/component-2/hero-image.png" alt="header image">
-                    </div>
-                </section>
+                <div class="items-center justify-end hidden col-span-1 md:flex">
+                    <img class="w-4/5 rounded-md"
+                         src="./assets/component-2/hero-image.png" alt="header image">
+                </div>
+            </section>
                 
              <!-- Endorsements -->
-             <section class="w-full">
+            <section class="w-full">
                 <!-- Wide full-width container for additional content -->
                 <div class="container flex flew-col items-center gap-8 mx-auto my-40">
                     <p class="text-center text-dark-grey-600 font-semibold mb-10 text-2xl">
@@ -247,10 +249,10 @@
                             
                     </div>
                 </div>
+            
             </section>
-
             <!--Component 3: Features -->
-           <div class="container mx-auto py-10 flex flex-col items-center justify-center">
+            <div class="container mx-auto py-10 flex flex-col items-center justify-center">
                 <!--Header section-->
                 <div class="container mx-auto py-10 flex flex-col items-center justify-center mt-12">
                             
@@ -406,93 +408,103 @@
 
                 <!--End of card section-->  
             </div>  
-        <!--end of Component 3-->
+             <!--end of Component 3-->
 
-        <!--Component 4: Stats and Getting Started-->
-        <!--STATS-->
-        <div class="w-full">
-            <div class="container flex flex-col items-center gap-16 mx-auto my-32">
-                <div class="grid w-full grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-y-8">
-                    <!--Statistic Blocks-->
-                    <div class="flex flex-col items-center">
-                        <h3 class="text-5xl font-extrabold leading-7 text-center text-dark-grey-900"><span id="countto1" countto="250">250</span>+</h3>
-                        <p class="text-base font-medium leading-7 text-center text-dark-grey-600">Hours Saved Sitting in the Bank</p>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <h3 class="text-5xl font-extrabold leading-7 text-center text-dark-grey-900"><span id="countto2" countto="12">12</span>m</h3>
-                        <p class="text-base font-medium leading-7 text-center text-dark-grey-600">Cache Saved</p>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <h3 class="text-5xl font-extrabold leading-7 text-center text-dark-grey-900"><span id="countto3" countto="2600" data-decimal="1">2.8</span>k+</h3>
-                        <p class="text-base font-medium leading-7 text-center text-dark-grey-600">Global Partners</p>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <h3 class="text-5xl font-extrabold leading-7 text-center text-dark-grey-900"><span id="countto4" countto="18000">18,000</span>+</h3>
-                        <p class="text-base font-medium leading-7 text-center text-dark-grey-600">Happy Developers</p>
+            <!--Component 4: Stats and Getting Started-->
+            <!--STATS-->
+            <div class="w-full">
+                <div class="container flex flex-col items-center gap-16 mx-auto my-32">
+                    <div class="grid w-full grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-y-8">
+                        <!--Statistic Blocks-->
+                        <div class="flex flex-col items-center">
+                            <h3 class="text-5xl font-extrabold leading-7 text-center text-dark-grey-900"><span id="countto1" countto="250">250</span>+</h3>
+                            <p class="text-base font-medium leading-7 text-center text-dark-grey-600">Hours Saved Sitting in the Bank</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h3 class="text-5xl font-extrabold leading-7 text-center text-dark-grey-900"><span id="countto2" countto="12">12</span>m</h3>
+                            <p class="text-base font-medium leading-7 text-center text-dark-grey-600">Cache Saved</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h3 class="text-5xl font-extrabold leading-7 text-center text-dark-grey-900"><span id="countto3" countto="2600" data-decimal="1">2.8</span>k+</h3>
+                            <p class="text-base font-medium leading-7 text-center text-dark-grey-600">Global Partners</p>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <h3 class="text-5xl font-extrabold leading-7 text-center text-dark-grey-900"><span id="countto4" countto="18000">18,000</span>+</h3>
+                            <p class="text-base font-medium leading-7 text-center text-dark-grey-600">Happy Developers</p>
+                        </div>
+                        <!-- End of Statistic Blocks-->
                     </div>
                 </div>
             </div>
-        </div>
+            <!--End of STATS-->
 
-        <!--Getting Started-->
-        <div class="w-full">
-            <div class="container flex flex-col items-center gap-16 mx-auto my-32">
-                <div class="grid w-full grid-cols-1 gap-32 lg:grid-cols-2">
-                    <div class="bg-cover bg-center hidden lg:block rounded-3xl" style="background-image: url(./assets.)">
-                    </div>
-                    <div class="flex flex-col gap-16">
-                        <div class="flex flex-col gap-2 text-center md:text-start">
-                            <h2 class="text-3xl font-extrabold md:text-4xl lg:text-5xl text-dark-grey-900">How Cache Works?</h2>
-                            <p class="text-base font-medium leading-7 text-dark-grey-600"><span style="color: rgb(55, 65, 81); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
-                            </span>
-                            Cache Bank simplifies sign-up with a user-friendly website, streamlined account options, and an efficient verification process,
-                            making banking accessible and hassle-free for developers.
-                            </p>
+            <!-- Getting Started-->
+            <div class="w-full">
+                <div class="container flex flex-col items-center gap-16 mx-auto my-32">
+                    <div class="grid w-full grid-cols-1 gap-32 lg:grid-cols-2">
+                        <!--IMG -->
+                        <div class="bg-contain bg-no-repeat bg-center hidden lg:block rounded-3xl" style="background-image: url('../assets/component-4/getting-started.png')">
+                        <!-- <img class="" src="./assets/component-4/getting-started.png" alt=""> -->
                         </div>
-                        <!--Numbered Steps-->
-                        <div class="grid w-full grid-cols-1 md:grid-cols-2 gad-y-16 gap-x-10">
-                            <!--1-->
-                            <div class="flex flex-col items-start gap-1">
-                                <div class="flex items-center justify-center w-12 h-12 rounded-full mb-2 bg-green-500">
-                                    <span class="text-base font-bold leading-7 text-white">1</span>
-                                </div>
-                                <h3 class="text-base font-bold leading-tight text-dark-grey-900"><span style="border-color: rgb(217, 217, 227); border-image: initial; "></span>Visit Cache Bank Website</h3>
-                                <p class="text-base font-medium leading-7 text-dark-grey-600"><span style="color: rgb(55, 65, 81); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></span>Go to Cache Bank, click "Sign Up" or "Open an Account."</p>
+
+                        <!--How Cache Works-->
+                        <div class="flex flex-col gap-16">
+                            <div class="flex flex-col gap-2 text-center md:text-start">
+                                <h2 class="text-3xl font-extrabold md:text-4xl lg:text-5xl text-dark-grey-900">How Cache Works?</h2>
+                                <p class="text-base font-medium leading-7 text-dark-grey-600"><span style="color: rgb(55, 65, 81); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+                                </span>
+                                Cache Bank simplifies sign-up with a user-friendly website, streamlined account options, and an efficient verification process,
+                                making banking accessible and hassle-free for developers.
+                                </p>
                             </div>
-                            <!--2-->
-                            <div class="flex flex-col items-start gap-1">
-                                <div class="flex items-center justify-center w-12 h-12 rounded-full mb-2 bg-pink-500">
-                                    <span class="text-base font-bold leading-7 text-white">1</span>
+
+                            <!--Numbered Steps-->
+                            <div class="grid w-full grid-cols-1 md:grid-cols-2 gad-y-16 gap-x-10">
+                                <!--1-->
+                                <div class="flex flex-col items-start gap-1">
+                                    <div class="flex items-center justify-center w-12 h-12 rounded-full mb-2 bg-green-500">
+                                        <span class="text-base font-bold leading-7 text-white">1</span>
+                                    </div>
+                                    <h3 class="text-base font-bold leading-tight text-dark-grey-900"><span style="border-color: white; border-image: initial; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x:0; --tw-translate-y:0; --tw-rotate:0; --tw-skew-x:0; --tw-skew-y:0; --tw-scale-x:1; --tw-scale-y:1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: white; --tw-ring-color: rgba(69, 89, 164, .5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparentl --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscalre: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-dropshadow: ; --tw-backgrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; color: var(--tw-prose-bold); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ">
+                                    </span>Visit Cache Bank Website</h3>
+                                    <p class="text-base font-medium leading-7 text-dark-grey-600"><span style="color: rgb(55, 65, 81); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; white-space-collapse: preserve;"></span>Go to Cache Bank, click "Sign Up" or "Open an Account."</p>
                                 </div>
-                                <h3 class="text-base font-bold leading-tight text-dark-grey-900"><span style="border-color: rgb(217, 217, 227); border-image: initial; "></span>Choose Account Type</h3>
-                                <p class="text-base font-medium leading-7 text-dark-grey-600"><span style="color: rgb(55, 65, 81); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></span>Select from checking, savings, or developer-specific accounts.</p>
-                            </div>
-                            <!--3-->
-                            <div class="flex flex-col items-start gap-1">
-                                <div class="flex items-center justify-center w-12 h-12 rounded-full mb-2 bg-pink-500">
-                                    <span class="text-base font-bold leading-7 text-white">1</span>
+                                <!--2-->
+                                <div class="flex flex-col items-start gap-1">
+                                    <div class="flex items-center justify-center w-12 h-12 rounded-full mb-2 bg-pink-500">
+                                        <span class="text-base font-bold leading-7 text-white">2</span>
+                                    </div>
+                                    <h3 class="text-base font-bold leading-tight text-dark-grey-900"><span style="border-color: white; border-image: initial; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x:0; --tw-translate-y:0; --tw-rotate:0; --tw-skew-x:0; --tw-skew-y:0; --tw-scale-x:1; --tw-scale-y:1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: white; --tw-ring-color: rgba(69, 89, 164, .5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparentl --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscalre: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-dropshadow: ; --tw-backgrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; color: var(--tw-prose-bold); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ">
+                                    </span>Choose Account Type</h3>
+                                    <p class="text-base font-medium leading-7 text-dark-grey-600"><span style="color: rgb(55, 65, 81); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></span>Select from checking, savings, or developer-specific accounts.</p>
                                 </div>
-                                <h3 class="text-base font-bold leading-tight text-dark-grey-900"><span style="border-color: rgb(217, 217, 227); border-image: initial; "></span>Provide Personal Information</h3>
-                                <p class="text-base font-medium leading-7 text-dark-grey-600"><span style="color: rgb(55, 65, 81); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></span>Complete the form with your details and identification for security.</p>
-                            </div>
-                            <!--4-->
-                            <div class="flex flex-col items-start gap-1">
-                                <div class="flex items-center justify-center w-12 h-12 rounded-full mb-2 bg-green-500">
-                                    <span class="text-base font-bold leading-7 text-white">1</span>
+                                <!--3-->
+                                <div class="flex flex-col items-start gap-1">
+                                    <div class="flex items-center justify-center w-12 h-12 rounded-full mb-2 bg-pink-500">
+                                        <span class="text-base font-bold leading-7 text-white">3</span>
+                                    </div>
+                                    <h3 class="text-base font-bold leading-tight text-dark-grey-900"><span style="border-color: white; border-image: initial; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x:0; --tw-translate-y:0; --tw-rotate:0; --tw-skew-x:0; --tw-skew-y:0; --tw-scale-x:1; --tw-scale-y:1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: white; --tw-ring-color: rgba(69, 89, 164, .5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparentl --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscalre: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-dropshadow: ; --tw-backgrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; color: var(--tw-prose-bold); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ">
+                                    </span>Provide Personal Information</h3>
+                                    <p class="text-base font-medium leading-7 text-dark-grey-600"><span style="color: rgb(55, 65, 81); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></span>Complete the form with your details and identification for security.</p>
                                 </div>
-                                <h3 class="text-base font-bold leading-tight text-dark-grey-900"><span style="border-color: rgb(217, 217, 227); border-image: initial; "></span>Verify and Submit</h3>
-                                <p class="text-base font-medium leading-7 text-dark-grey-600"><span style="color: rgb(55, 65, 81); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></span>Check your information, agree to terms, and submit for account approval.</p>
+                                <!--4-->
+                                <div class="flex flex-col items-start gap-1">
+                                    <div class="flex items-center justify-center w-12 h-12 rounded-full mb-2 bg-green-500">
+                                        <span class="text-base font-bold leading-7 text-white">4</span>
+                                    </div>
+                                    <h3 class="text-base font-bold leading-tight text-dark-grey-900"><span style="border-color: white; border-image: initial; --tw-border-spacing-x: 0; --tw-border-spacing-y: 0; --tw-translate-x:0; --tw-translate-y:0; --tw-rotate:0; --tw-skew-x:0; --tw-skew-y:0; --tw-scale-x:1; --tw-scale-y:1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness: proximity; --tw-gradient-to-position: ; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: white; --tw-ring-color: rgba(69, 89, 164, .5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; --tw-shadow: 0 0 transparent; --tw-shadow-colored: 0 0 transparentl --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscalre: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-dropshadow: ; --tw-backgrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; color: var(--tw-prose-bold); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ">
+                                    </span>Verify and Submit</h3>
+                                    <p class="text-base font-medium leading-7 text-dark-grey-600"><span style="color: rgb(55, 65, 81); font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;"></span>Check your information, agree to terms, and submit for account approval.</p>
+                                </div>
                             </div>
+                            <!--End of Numbered steps-->
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+            <!--end of Getting Started-->
 
-        <div class="w-full bg-green-500">
-            <!-- Full-width footer container with green background -->
         </div>
-
         <!--NavBar toggle-->
         <script>
             document.getElementById("mobile-menu-toggle")
