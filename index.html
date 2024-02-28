@@ -25,37 +25,65 @@
                         <img class="h-8" src="./assets/component-1/navigation/cache-bank-logo.png" alt="">
                     </figure>
                     
+                    <!-- toggle 'button'-->
+                    <button class="md:hidden p-4" id="mobile-menu-toggle" aria-label="Menu">
+                        <!-- hamburger SVG -->
+                        <svg focusable="false" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6" fill="none">
+                                <g clip-path="url(#clip0_429_11066)">
+                                    <path d="M3 6.00092H21M3 12.0009H21M3 18.0009H21" stroke="#292929" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_429_11066">
+                                        <rect width="24" height="24" fill="white" transform="translate(0 0.000915527)"/>
+                                    </clipPath>
+                                </defs> 
+                        </svg>
+                    </button>
+                    
                     <!--NavBar links, mobile view -->
-                    <nav class="absolute flex md:hidden flex-col items-start shadow-main justify-center w-full gap-3 overflow-hidden bg-gray-100 max-h-screen top-full px-4 py-4"
-                            id="mobile-menu">
-                            <a 
-                                href="#product" class="text-sm font-normal text-dark-grey-700 px-4 py-2 rounded-xl focus:outline-none focus:ring-4 focus:ring-purple-blue-200 hover:text-white hover:bg-pink-500 transition duration-300"
-                                aria-label="product">
-                                Product
-                            </a>
-                            <a 
-                                href="#features" class="text-sm font-normal text-dark-grey-700 px-4 py-2 rounded-xl focus:outline-none focus:ring-4 focus:ring-purple-blue-200 hover:text-white hover:bg-pink-500 transition duration-300"
-                                aria-label="features">
-                                Features
-                            </a>
-                            <a 
-                                href="#getStarted" class="text-sm font-normal text-dark-grey-700 px-4 py-2 rounded-xl focus:outline-none focus:ring-4 focus:ring-purple-blue-200 hover:text-white hover:bg-pink-500 transition duration-300"
-                                aria-label="get started">
-                                Get Started
-                            </a>
-                            <a 
-                                href="#contact" class="text-sm font-normal text-dark-grey-700 px-4 py-2 rounded-xl focus:outline-none focus:ring-4 focus:ring-purple-blue-200 hover:text-white hover:bg-pink-500 transition duration-300"
-                                aria-label="contact">
-                                Contact
-                            </a>
-
-                        <!--NavBar buttons, mobile view -->
-                        <button class="flex items-center px-4 py-2 text-sm font-normal text-black focus:outline-none rounded-xl  hover:text-white hover:bg-pink-500 focus:ring-4 focus:ring-purple-blue-200 transition duration-300">
-                            Log In
-                        </button>
-                        <button class="flex items-center px-4 py-2 text-sm font-bold text-purple-blue-600 bg-purple-100 rounded-xl hover:bg-purple-blue-600 hover:text-purple-100 focus:outline-none focus:ring-4 focus:ring-purple-blue-200 transition duration-300">
-                            Sign Up
-                        </button>   
+                    <nav class="absolute flex md:hidden flex-col items-start shadow-main justify-center w-full gap-3 overflow-hidden bg-gray-100 max-h-screen top-full px-4 py-4" id="mobile-menu">
+                        <ul> 
+                            <li class="py-3">
+                                <a 
+                                    href="#product" class="text-sm font-normal text-dark-grey-700 px-4 py-2 rounded-xl focus:outline-none focus:ring-4 focus:ring-purple-blue-200 hover:text-white hover:bg-pink-500 transition duration-300"
+                                    aria-label="product">
+                                    Product
+                                </a>
+                            </li>
+                            <li class="py-3">  
+                                <a 
+                                    href="#features" class="text-sm font-normal text-dark-grey-700 px-4 py-2 rounded-xl focus:outline-none focus:ring-4 focus:ring-purple-blue-200 hover:text-white hover:bg-pink-500 transition duration-300"
+                                    aria-label="features">
+                                    Features
+                                </a>
+                            </li>   
+                            <li class="py-3">  
+                                <a 
+                                    href="#getStarted" class="text-sm font-normal text-dark-grey-700 px-4 py-2 rounded-xl focus:outline-none focus:ring-4 focus:ring-purple-blue-200 hover:text-white hover:bg-pink-500 transition duration-300"
+                                    aria-label="get started">
+                                    Get Started
+                                </a>
+                            </li> 
+                            <li class="py-3"> 
+                                <a 
+                                    href="#contact" class="text-sm font-normal text-dark-grey-700 px-4 py-2 rounded-xl focus:outline-none focus:ring-4 focus:ring-purple-blue-200 hover:text-white hover:bg-pink-500 transition duration-300"
+                                    aria-label="contact">
+                                    Contact
+                                </a>
+                            </li>       
+                        
+                            <!--NavBar buttons, mobile view -->
+                            <li class="py-2"> 
+                                <button class="flex items-center px-4 py-2 text-sm font-normal text-black focus:outline-none rounded-xl  hover:text-white hover:bg-pink-500 focus:ring-4 focus:ring-purple-blue-200 transition duration-300">
+                                    Log In
+                                </button>
+                            </li>    
+                            <li class="py-2">     
+                                <button class="flex items-center px-4 py-2 text-sm font-bold text-purple-blue-600 bg-purple-100 rounded-xl hover:bg-purple-blue-600 hover:text-purple-100 focus:outline-none focus:ring-4 focus:ring-purple-blue-200 transition duration-300">
+                                    Sign Up
+                                </button> 
+                            </li>      
+                        </ul>    
                     </nav>
                     <!--NavBar links, desktop view-->
                     <nav class="hidden md:flex items-center justify-between gap-12 text-black">
@@ -90,22 +118,7 @@
                             </button>
                         </div>
                     </nav>
-                   
-
-                    <!-- toggle 'button'-->
-                    <button class="md:hidden p-4" id="mobile-menu-toggle" aria-label="Menu">
-                        <!-- hamburger SVG -->
-                        <svg focusable="false" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6" fill="none">
-                                <g clip-path="url(#clip0_429_11066)">
-                                    <path d="M3 6.00092H21M3 12.0009H21M3 18.0009H21" stroke="#292929" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_429_11066">
-                                        <rect width="24" height="24" fill="white" transform="translate(0 0.000915527)"/>
-                                    </clipPath>
-                                </defs>
-                        </svg>
-                    </button>
+                    
                 </header>
                 <!--End of Component 1-->
 
@@ -134,7 +147,7 @@
                                 </button>
                             </div>
                         </div>
-            
+                        <!--Hero Image-->
                         <div class="items-center justify-end hidden col-span-1 md:flex">
                             <img class="w-4/5 rounded-md"
                                 src="./assets/component-2/hero-image.png" alt="header image">
@@ -148,7 +161,7 @@
                             <p class="text-center text-dark-grey-600 font-semibold mb-10 text-2xl">
                                 Endorsed by global companies like
                             </p>
-
+                            <!--Endorsement SVGs-->
                             <div class="flex flex-wrap items-center justify-center w-full gap-6 lg:gap-0 lg:flex-nowrap lg:justify-between">
                                 
                                 <!--Nike Logo SVG 1--> 
