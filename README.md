@@ -1,7 +1,7 @@
 # Installation
 
 ```
-# Install dependencies
+# Install dependencies for TailwindCSS
 npm install
 
 ```
