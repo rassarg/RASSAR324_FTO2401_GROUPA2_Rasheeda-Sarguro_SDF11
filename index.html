@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--made sure to include missing doctype and lang tags-->
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        <meta name="author" content="Rasheeda Sarguro">
-        <meta name="keywords" content="HTML, CSS, JavaScript">
-        <meta name="description" content="Fictional Bank Landing page">
+        <meta name="author" content="Rasheeda Sarguro"> <!--added missing meta tags-->
+        <meta name="keywords" content="HTML, CSS, JavaScript"> <!--added other meta tags-->
+        <meta name="description" content="Fictional Bank Landing page"> <!--added this meta tag-->
         <title>Cache Bank Landing Page</title>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="./assets/css/loopple/loopple.css"/>
     </head>
 
-    <body class="null"> 
+    <body class="null"> <!--"null" is intentionally being used-->
         <div class="container w-full">
             <!-- Component 1: Project Setup and Responsive Navigation -->
             <div class="mx-auto bg-white"> 
@@ -25,7 +25,7 @@
                 <header class="relative flex flex-wrap items-center justify-between w-full bg-white py-7 shrink-0">
                     <!--Cache logo-->
                     <div class="px-4">
-                        <img class="h-8" src="./assets/component-1/navigation/cache-bank-logo.png" alt="">
+                        <img class="h-8" src="./assets/component-1/navigation/cache-bank-logo.png" alt=""> <!--alt intentionally left empty as it is a logo-->
                     </div>
                     
                     <!--toggle 'button-->
@@ -159,7 +159,7 @@
                         <!--Hero Image-->
                         <div class="items-center justify-end hidden col-span-1 md:flex">
                             <img class="w-4/5 rounded-md"
-                                src="./assets/component-2/hero-image.png" alt="header image">
+                                src="./assets/component-2/hero-image.png" alt="header image of animated woman sitting at desk with computer open"> 
                         </div>
                     </section>
                     <!--End of Hero-->
@@ -211,9 +211,9 @@
                         <!--End of header section-->  
 
                         <!--Component 3 Card section-->
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-20" role="tablist">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-20" role="tablist"> <!--the role= tablist is for accessibility-->
                             <!--card 1-->
-                            <div class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-500 transition duration-300 focus:outline-none focus:ring-4 focus:ring-purple-blue-200" tabindex="0" aria-label="Developer-Focused Account Plans" role="tabpanel">
+                            <div class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-500 transition duration-300 focus:outline-none focus:ring-4 focus:ring-purple-blue-200" tabindex="0" aria-label="Developer-Focused Account Plans" role="tabpanel"> <!--the role=tabpanel, and tabindex, allows users to tab through each card, while aria-label announces, in this case, what is on the card's h4-->
                                 <div class="flex items-center justify-center w-16 h-12 rounded-2xl bg-green-500"> 
                                     <!--Here in cards 1-6 (as well as in the Contact cards later) the SVGs are not added to <img> tags as they don't serve an aria function and are purely decorative for sighted users. 
                                     Adding aria <desc> and/or <title> would be redundant as it would require you to write extra code advising aria technology to ignore these SVGs-->
@@ -344,8 +344,8 @@
                             <div class="grid w-full grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-y-8">
                                 <!--Statistic Blocks-->
                                 <div class="flex flex-col items-center">
-                                    <h3 class="text-5xl font-extrabold leading-10 text-center text-dark-grey-900">
-                                        <span id="countto1" countto="250">250</span>+
+                                    <h3 class="text-5xl font-extrabold leading-10 text-center text-dark-grey-900"> 
+                                        <span id="countto1" countto="250">250</span>+ <!--The javascript function that animates the numbers to count to a specific point. This happens when this part of the screen scrolls into view/ page is refreshed-->
                                     </h3>
                                     <p class="text-base font-medium leading-7 text-center text-dark-grey-600">
                                         Hours Saved Sitting in the Bank
@@ -384,8 +384,8 @@
                     <!--Comp 4 Getting Started-->
                     <section class="w-full">
                         <div class="container flex flex-col items-center gap-16 mx-auto my-16">
-                            <div class="grid w-full grid-cols-1 gap-20 lg:grid-cols-2">
-                                <!--IMG -->
+                            <div class="grid w-full grid-cols-1 gap-20 lg:grid-cols-2"> <!--the intention here is to create a grid allowing for the image to span the left of the grid, and disappear when the screen size shrinks. Whilst the numbered steps and their text elements are on the right side of the grid. They span the width of the grid on smaller screens-->
+                                <!--IMG --> <!--Here the image becomes hidden unless viewing it on desktop view (lg screens)-->
                                 <div class="bg-contain bg-no-repeat bg-center hidden lg:block rounded-3xl" style="background-image: url('assets/component-4/getting-started.png')">
                                 </div>
 
@@ -485,7 +485,7 @@
              <!-- Component 5: Contact and Footer -->
 
                 <!--Contact-->
-                <section class="w-full" aria-label="Contact Information" role="region">
+                <section class="w-full" aria-label="Contact Information" role="region"> <!--role=region was added to create this Contact section landmark for accessibility navigation, that differentiates it from the role="contentinfo" in footer -->
                     <!--Card container-->
                     <div class="container flex flex-col items-center gap-16 mx-auto my-32">
                         <!--Card list-->
@@ -502,10 +502,10 @@
                                     </p>
                                     <p class="text-sm leading-7 text-dark-grey-600">
                                         Contact us at
-                                    </p>
-                                    <a class="text-base font-bold text-green-500 hover:text-white hover:bg-pink-500 px-2 py-2 rounded-xl focus:outline-none focus:ring-4 focus:ring-purple-blue-200 transition duration-300" aria-label="to hi@cachebank.com" href="mailto: hello@loople.com">
+                                    </p> <!-- By using <a> tags below instead of another <p> tag, hyperlinks are created that can be styled for more dynamic user experience. -->
+                                    <a class="text-base font-bold text-green-500 hover:text-white hover:bg-pink-500 px-2 py-2 rounded-xl focus:outline-none focus:ring-4 focus:ring-purple-blue-200 transition duration-300" aria-label="to hi@cachebank.com" href="mailto: hello@loople.com"> <!--the mailto creates a link that opens in the user's email program--> 
                                         hi@cachebank.com
-                                    </a>
+                                    </a> <!--having the email set to hello@loople.com instead of hi@cachebank.com (as well as the phone number and locations below) was left intentionally. They did it this way in the video and I did not change it because I don't know if there is backend reason for using the dummy info instead of the real one. If there isn't one, the mailto would be for hi@cachebank.com, the tel for +215-486-5135, and the google maps link would also need to be updated-->
                                 </div>
                                 <!--Phone card-->
                                 <div class="flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main focus:outline-none focus:ring-4 focus:ring-purple-blue-200 transition duration-300 p-3" tabindex="0" aria-label="Phone" role="tabpanel">
@@ -607,7 +607,7 @@
                     </div>    
                     <!--Copyright -->
                     <div class="flex items-center">
-                        <p class="text-base font-normal leading-7 text-center">
+                        <p class="text-base font-normal leading-7 text-center"> <!--copyright logo &copy; intentionally not used as per the design given-->
                             2024 Cache Bank. All rights reserved.
                         </p>
                     </div>
@@ -619,7 +619,7 @@
 
         <!-- End of Component 5 -->
 
-        <!--NavBar toggle 'button'-->
+        <!--NavBar toggle 'button'-->  <!--This is the Javascript function used to create the toggle button, visible in the NavBar on small screens, that can be clicked -->
         <script>
             document.getElementById("mobile-menu-toggle")
             .addEventListener("click", function () {
