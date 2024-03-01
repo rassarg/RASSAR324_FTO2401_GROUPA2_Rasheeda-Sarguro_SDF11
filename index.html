@@ -17,20 +17,20 @@
         <link rel="stylesheet" href="./assets/css/loopple/loopple.css"/>
     </head>
 
-    <!-- Component 1: Project Setup and Responsive Navigation -->
     <body class="null"> 
         <div class="container w-full">
-            <div class="mx-auto bg-white" > 
-                <!-- Component 1: Responsive Navigation -->
+            <!-- Component 1: Project Setup and Responsive Navigation -->
+            <div class="mx-auto bg-white"> 
+                <!--Component 1: Responsive Navigation-->
                 <header class="relative flex flex-wrap items-center justify-between w-full bg-white py-7 shrink-0">
-                    <!-- Cache logo -->
-                    <figure class="px-4">
+                    <!--Cache logo-->
+                    <div class="px-4">
                         <img class="h-8" src="./assets/component-1/navigation/cache-bank-logo.png" alt="">
-                    </figure>
+                    </div>
                     
-                    <!-- toggle 'button'-->
+                    <!--toggle 'button-->
                     <button class="md:hidden p-4" id="mobile-menu-toggle" aria-label="Navigation menu">
-                        <!-- hamburger SVG -->
+                        <!--hamburger SVG-->
                         <svg aria-hidden="true" focusable="false" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6" fill="none">
                                 <g clip-path="url(#clip0_429_11066)">
                                     <path d="M3 6.00092H21M3 12.0009H21M3 18.0009H21" stroke="#292929" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -43,10 +43,10 @@
                         </svg>
                     </button>
                     
-                    <!-- Start NavBar Mobile View-->
+                    <!--NavBar Mobile View-->
                     <nav class="absolute flex md:hidden flex-col items-start shadow-main justify-center w-full gap-3 overflow-hidden bg-gray-100 max-h-screen top-full px-4 py-4" id="mobile-menu">
                         <ul> 
-                            <!--NavBar links, mobile view -->
+                            <!--NavBar links, mobile view-->
                             <li class="py-3">
                                 <a 
                                     href="#product" class="text-sm font-normal text-dark-grey-700 px-4 py-2 rounded-xl focus:outline-none focus:ring-4 focus:ring-purple-blue-200 hover:text-white hover:bg-pink-500 transition duration-300"
@@ -76,7 +76,7 @@
                                 </a>
                             </li>       
                         
-                            <!--NavBar buttons, mobile view -->
+                            <!--NavBar buttons, mobile view-->
                             <li class="py-2"> 
                                 <button class="flex items-center px-4 py-2 text-sm font-semibold text-dark-grey-700 focus:outline-none rounded-xl  hover:text-white hover:bg-pink-500 focus:ring-4 focus:ring-purple-blue-200 transition duration-300">
                                     Log In
@@ -89,9 +89,9 @@
                             </li>      
                         </ul>    
                     </nav>
-                    <!--End NavBar Mobile view -->
+                    <!--End NavBar Mobile view-->
 
-                    <!--Start NavBar Desktop view-->
+                    <!--NavBar Desktop view-->
                     <nav class="hidden md:flex items-center justify-between gap-12">
                         <!--NavBar links, desktop view-->
                         <a 
@@ -115,7 +115,7 @@
                             Contact
                         </a>
                     
-                        <!--NavBar buttons, desktop view -->
+                        <!--NavBar buttons, desktop view-->
                         <div class="hidden md:flex items-center gap-4 px-1 py-1">
                             <button class="text-sm font-semibold text-dark-grey-900 hover:text-white hover:bg-pink-500 px-4 py-2 rounded-xl focus:outline-none focus:ring-4 focus:ring-purple-blue-200 transition duration-300">
                                 Log In
@@ -126,14 +126,15 @@
                         </div>
                     </nav>
                     <!--End NavBar Desktop view-->
-                    
                 </header>
-                <!--End of Component 1-->
+                <!--End of Responsive Navigation-->
+
+                <!-- End of Component 1 -->
 
                 <main>
-                    <!-- Component 2: Hero and Endorsements-->
+                    <!-- Component 2: Hero and Endorsements -->
                         
-                    <!--Hero -->
+                    <!--Hero-->
                     <section class="grid w-full grid-cols-1 my-auto mt-12 mb-8 md:grid-cols-2 xl:gap-14 md:gap-5">
                         <div class="flex flex-col justify-center col-span-1 text-center lg:text-start">
                             <h1 id="product" class="mb-8 text-4xl font-extrabold leading-tight lg:text-6xl text-dark-grey-900">
@@ -161,17 +162,18 @@
                                 src="./assets/component-2/hero-image.png" alt="header image">
                         </div>
                     </section>
+                    <!--End of Hero-->
                         
-                    <!-- Endorsements -->
+                    <!--Endorsements-->
                     <section class="w-full">
-                        <!-- Wide full-width container for additional content -->
+                        <!--Wide full-width container for additional content-->
                         <div class="container flex flex-col items-center gap-8 mx-auto my-40">
                             <p class="text-center text-dark-grey-600 font-semibold mb-10 text-2xl">
                                 Endorsed by global companies like
                             </p>
                             <!--Endorsement SVGs-->
                             <div class="flex flex-wrap items-center justify-center w-full gap-6 lg:gap-0 lg:flex-nowrap lg:justify-between">
-                                
+                                <!--SVGs added to <img> tags here to give alt and title for accessibility reasons. Adding to <img> tag allows for screen-readers to read the image aloud. I tried using <desc> and <title> but it didn't work for one of the screen readers I tested, so I used this method instead as it seemed more universally compatible-->
                                 <!--Nike Logo SVG 1--> 
                                 <img src="assets/component-2/logos/nike-logo.svg" alt="Nike" title="Nike">
 
@@ -186,12 +188,15 @@
 
                                 <!--Notion Logo SVG 5--> 
                                 <img src="assets/component-2/logos/notion-logo.svg" alt="Notion" title="Notion">
-                                    
                             </div>
                         </div>
-                    
                     </section>
-                    <!--Component 3: Features -->
+                    <!--End of Endorsements-->
+
+                    <!-- End of Component 2 -->
+
+                    <!-- Component 3: Features -->
+
                     <section class="container mx-auto py-8 flex flex-col items-center justify-center">
                         <!--Component 3 Header section-->
                         <div class="container mx-auto py-10 flex flex-col items-center justify-center mt-12">        
@@ -210,6 +215,8 @@
                             <!--card 1-->
                             <div class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-500 transition duration-300 focus:outline-none focus:ring-4 focus:ring-purple-blue-200" tabindex="0" aria-label="Developer-Focused Account Plans" role="tabpanel">
                                 <div class="flex items-center justify-center w-16 h-12 rounded-2xl bg-green-500"> 
+                                    <!--Here in cards 1-6 (as well as in the Contact cards later) the SVGs are not added to <img> tags as they don't serve an aria function and are purely decorative for sighted users. 
+                                    Adding aria <desc> and/or <title> would be redundant as it would require you to write extra code advising aria technology to ignore these SVGs-->
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
                                         <path d="M22.8233 8C22.8233 7.28 22.4533 6.65 21.8833 6.3L12.8333 1L3.78331 6.3C3.21331 6.65 2.83331 7.28 2.83331 8V18C2.83331 19.1 3.73331 20 4.83331 20H20.8333C21.9333 20 22.8333 19.1 22.8333 18L22.8233 8ZM20.8233 8V8.01L12.8333 13L4.83331 8L12.8333 3.32L20.8233 8ZM4.83331 18V10.34L12.8333 15.36L20.8233 10.37L20.8333 18H4.83331Z" fill="white"/>
                                     </svg> 
@@ -224,10 +231,10 @@
                                         for software developers' financial needs and career growth.
                                     </p>
                                 </div>
-                            
                             </div>
+                            <!--End of card 1-->
                         
-                        <!--card 2-->
+                            <!--card 2-->
                             <div class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-500 transition duration-300 focus:outline-none focus:ring-4 focus:ring-purple-blue-200" tabindex="0" aria-label="Advanced Online Banking Platform" role="tabpanel">
                                 <div class="flex items-center justify-center w-16 h-12 rounded-2xl bg-green-500"> 
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
@@ -244,8 +251,9 @@
                                     </p>
                                 </div>
                             </div>
+                            <!--End of card 2-->
 
-                        <!--card 3-->
+                            <!--card 3-->
                             <div class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-500 transition duration-300 focus:outline-none focus:ring-4 focus:ring-purple-blue-200" tabindex="0" aria-label="Tech-Savvy Customer Support" role="tabpanel">
                                 <div class="flex items-center justify-center w-16 h-12 rounded-2xl bg-green-500"> 
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
@@ -265,8 +273,9 @@
                                     </p>
                                 </div>
                             </div>
+                            <!--End of card 3-->
                             
-                        <!--card 4-->
+                            <!--card 4-->
                             <div class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-500 transition duration-300 focus:outline-none focus:ring-4 focus:ring-purple-blue-200" tabindex="0" aria-label="High-Level Security Features" role="tabpanel">
                                 <div class="flex items-center justify-center w-16 h-12 rounded-2xl bg-pink-500"> 
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
@@ -283,9 +292,9 @@
                                     </p>
                                 </div>
                             </div>
+                            <!--End of card 4-->
                             
-                            
-                        <!--card 5-->
+                            <!--card 5-->
                             <div class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-500 transition duration-300 focus:outline-none focus:ring-4 focus:ring-purple-blue-200" tabindex="0" aria-label="Innovative Financial Tools" role="tabpanel">
                                 <div class="flex items-center justify-center w-16 h-12 rounded-2xl bg-pink-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
@@ -302,8 +311,9 @@
                                     </p>
                                 </div>
                             </div>
+                            <!--End of card 5-->
                             
-                        <!--card 6-->
+                            <!--card 6-->
                             <div class="flex flex-col items-center gap-6 px-6 py-5 rounded-3xl shadow-main hover:bg-green-500 transition duration-300 focus:outline-none focus:ring-4 focus:ring-purple-blue-200" tabindex="0" aria-label="Community and Networking Opportunities" role="tabpanel">
                                 <div class="flex items-center justify-center w-16 h-12 rounded-2xl bg-pink-500">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
@@ -320,12 +330,14 @@
                                     </p>
                                 </div>
                             </div>
+                            <!--End of card 6-->
                         </div>
                         <!--End of card section-->  
-                    </section>  
-                    <!--end of Component 3-->
+                    </section>
 
-                    <!--Component 4: Stats and Getting Started-->
+                    <!-- End of Component 3 -->
+
+                 <!-- Component 4: Stats and Getting Started -->
                     <!--Comp 4 STATS-->
                     <section class="w-full">
                         <div class="container flex flex-col items-center gap-16 mx-auto my-28">
@@ -375,22 +387,23 @@
                                         Happy Developers
                                     </p>
                                 </div>
-                                <!-- End of Statistic Blocks-->
+                                <!--End of Statistic Blocks-->
                             </div>
                         </div>
                     </section>
                     <!--End of STATS-->
 
-                    <!-- Comp 4 Getting Started-->
-                    <div class="w-full">
+                    <!--Comp 4 Getting Started-->
+                    <section class="w-full">
                         <div class="container flex flex-col items-center gap-16 mx-auto my-16">
                             <div class="grid w-full grid-cols-1 gap-20 lg:grid-cols-2">
                                 <!--IMG -->
                                 <div class="bg-contain bg-no-repeat bg-center hidden lg:block rounded-3xl" style="background-image: url('assets/component-4/getting-started.png')">
                                 </div>
 
-                                <!--How Cache Works-->
-                                <section class="flex flex-col gap-16">
+                                <!--How Cache Works + Numbered Steps block-->
+                                <div class="flex flex-col gap-16">
+                                    <!--How Cache Works heading-->
                                     <div class="flex flex-col gap-2 text-center mb-12 md:text-start">
                                         <h2 id="getStarted" class="text-3xl font-extrabold md:text-4xl lg:text-5xl text-dark-grey-900">
                                             How Cache Works?
@@ -400,6 +413,7 @@
                                             making banking accessible and hassle-free for developers.
                                         </p>
                                     </div>
+                                    <!--End of How Cache Works heading-->
 
                                     <!--Numbered Steps-->
                                     <div class="grid w-full grid-cols-1 md:grid-cols-2 gad-y-16 gap-x-10" role="tablist">
@@ -469,22 +483,26 @@
                                         </div>
                                     </div>
                                     <!--End of Numbered steps-->
-                                </section>
+                                </div>
+                                <!--End of How Cache Works + Numbered Steps block-->
                             </div>
                         </div>
-                    </div>
-                    <!--end of Getting Started-->
+                    </section>
+                    <!--End of Getting Started-->
+
+                    <!-- End of Component 4 -->
+
                 </main>      
 
-                <!--Component 5: Contact and Footer -->
+             <!-- Component 5: Contact and Footer -->
 
-                <!--CONTACT-->
+                <!--Contact-->
                 <section class="w-full" aria-label="Contact Information" role="region">
-                    <!-- grid container -->
+                    <!--Card container-->
                     <div class="container flex flex-col items-center gap-16 mx-auto my-32">
-                        <!-- card list -->
+                        <!--Card list-->
                         <div id="contact" class="grid w-full grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3"  role="tablist">
-                            <!-- Email card --> 
+                                <!--Email card--> 
                                 <div class="flex flex-col items-center gap-3 px-7 py-10 bg-white rounded-3xl shadow-main focus:outline-none focus:ring-4 focus:ring-purple-blue-200 transition duration-300 hover:bg-gray-200  p-3" tabindex="0" aria-label="Email" role="tabpanel">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
@@ -501,7 +519,7 @@
                                         hi@cachebank.com
                                     </a>
                                 </div>
-                                <!-- Phone card -->
+                                <!--Phone card-->
                                 <div class="flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main focus:outline-none focus:ring-4 focus:ring-purple-blue-200 transition duration-300 hover:bg-gray-200 p-3" tabindex="0" aria-label="Phone" role="tabpanel">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
@@ -518,7 +536,7 @@
                                         +215-486-5135
                                     </a>
                                 </div>
-                                <!-- Location card -->
+                                <!--Location card-->
                                 <div class="flex flex-col items-center gap-3 px-8 py-10 bg-white rounded-3xl shadow-main focus:outline-none focus:ring-4 focus:ring-purple-blue-200 transition duration-300 hover:bg-gray-200 p-3" tabindex="0" aria-label="Location" role="tabpanel">
                                     <span>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" fill="none">
@@ -537,17 +555,23 @@
                                 </div>    
                             </div>
                         </div>
+                        <!--End of card list-->
                     </div>
-                </section>   
+                </section>  
+                <!--End of Contact--> 
             </div>
         </div>
-        <!--FOOTER-->
+
+         <!--Footer-->
         <footer class="w-full bg-green-500" aria-label="Footer" role="contentinfo">
             <div class="container flex flex-col mx-auto">
                 <div class="flex flex-col items-center w-full my-20">
                     <div class="flex flex-col items-center gap-6 mb-8">
-                        <!-- Socials-->
+                        <!--Socials-->
                         <div class="flex items-center gap-8">
+                            <!--Here the SVGs are not added to an <img> tag even though you'd want the screen reader to read out the logo in assistive technology,
+                            but because an <a> tag has been included, the aria label can be assigned to that instead, serving the same function for screen readers-->
+
                             <!--Facebook SVG-->
                             <a href="https://www.facebook.com/" target="_blank" class="text-grey-700 hover:text-grey-900 px-2 py-2 rounded-xl focus:outline-none focus:ring-4 focus:ring-purple-blue-200" title="Facebook" aria-label="Facebook">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none">
@@ -591,6 +615,7 @@
                                 </svg>
                             </a>           
                         </div>
+                        <!--End of Socials-->
                     </div>    
                     <!--Copyright -->
                     <div class="flex items-center">
@@ -598,9 +623,13 @@
                             2024 Cache Bank. All rights reserved.
                         </p>
                     </div>
+                    <!--End of Copyright-->
                 </div>
             </div>
         </footer>
+        <!--End of Footer-->
+
+        <!-- End of Component 5 -->
 
         <!--NavBar toggle 'button'-->
         <script>
